@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--三元色旗下APP包名-->
+    <string-array name="apps_package_name">
+        <item> com.suntech </item> <!--量子微查大陆版APP的包名-->
+        <item> com.suntech.qccheck </item>  <!--量子微查海外版版APP的包名-->
+    </string-array>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="black">#000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="white">#ffffffff</color>
+    <color name="help_title_view_bg_color">#393a3f</color>
+    <color name="menu_color">#909090</color>
+    <!--页面背景的颜色-->
+    <color name="color_page_bg">#F1F3F4</color>
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+</resources>

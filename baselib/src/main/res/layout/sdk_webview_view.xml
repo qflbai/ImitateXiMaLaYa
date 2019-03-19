@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <!--顶部的按钮（文字）75dip-->
+        <RelativeLayout
+            android:id="@+id/top_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:layout_alignParentTop="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <ToggleButton
+                            android:id="@+id/back_btn"
+                            android:layout_width="48dip"
+                            android:layout_height="48dip"
+                            android:layout_alignParentLeft="true"
+                            android:textOff=""
+                            android:textOn=""
+                            android:visibility="visible"
+                            android:checked="false"
+                            android:background="@drawable/btn_back_black_white"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dip"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:text="@string/string_product_info"
+                            />
+
+
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/webview_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:max="100"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_below="@+id/top_relativelayout"
+            android:visibility="gone"
+            />
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/webview_progressbar"
+            />
+
+</RelativeLayout>

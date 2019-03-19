@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+
+    <!--底部按钮(常态)：查询，鉴伪，二维码-->
+    <LinearLayout
+        android:id="@+id/ll_normal_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:layout_alignParentBottom="true"
+        >
+
+        <!--查询-->
+        <RelativeLayout
+            android:id="@+id/rl_query_press"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dip">
+
+                <ToggleButton
+                    android:id="@+id/tbtn_query"
+                    android:layout_width="47dip"
+                    android:layout_height="47dip"
+                    android:textOff=""
+                    android:textOn=""
+                    android:checked="true"
+                    android:background="@drawable/btn_scan_query"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/string_sdk_query"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--鉴伪-->
+        <RelativeLayout
+            android:id="@+id/rl_check_code_press"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dip">
+
+                <RelativeLayout
+                    android:id="@+id/rl_check_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dip">
+
+                    <ImageView
+                        android:id="@+id/tbtn_check_code_rotate"
+                        android:layout_width="88dip"
+                        android:layout_height="88dip"
+                        android:background="@drawable/take_photobtn_rotate"
+                        android:visibility="visible"
+                        />
+
+                    <ToggleButton
+                        android:id="@+id/tbtn_check_code"
+                        android:layout_width="88dip"
+                        android:layout_height="88dip"
+                        android:textOff=""
+                        android:textOn=""
+                        android:checked="false"
+                        android:background="@drawable/btn_take_photo"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dip"
+                    android:text="@string/string_check_code"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--二维码（条形码）-->
+        <RelativeLayout
+            android:id="@+id/rl_qr_code_press"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dip">
+
+                <ToggleButton
+                    android:id="@+id/tbtn_qr_code"
+                    android:layout_width="47dip"
+                    android:layout_height="47dip"
+                    android:layout_gravity="center_horizontal"
+                    android:textOff=""
+                    android:textOn=""
+                    android:checked="false"
+                    android:background="@drawable/btn_qrcode_barcode"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/string_barcode_and_qrcode"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--分割线-->
+    <ImageView
+        android:id="@+id/division_line_iv"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/sbc_snippet_text"
+        android:layout_above="@id/ll_normal_pattern"
+        />
+    <LinearLayout
+        android:id="@+id/toggleButtons_relativeLayout_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal"
+        android:layout_above="@id/division_line_iv"
+        >
+
+        <!--手电筒--> <!--android:background="@drawable/btn_scan_background"-->
+        <RelativeLayout
+            android:id="@+id/camera_flash_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_scan_backgroud_normal"
+            android:layout_weight="1">
+
+            <!--手电筒-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+
+                <ToggleButton
+                    android:id="@+id/toggleButton1"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:textOff=""
+                    android:textOn=""
+                    android:visibility="visible"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:background="@drawable/camera_flash_light_image"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dip"
+                    android:textColor="@color/sbc_header_text"
+                    android:textSize="12sp"
+                    android:text="@string/flashlight"
+                    />
+
+            </LinearLayout>
+
+            <!--分割线-->
+            <ImageView
+                android:layout_width="0.5dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/sbc_snippet_text"/>
+
+        </RelativeLayout>
+
+        <!--帮助-->
+        <RelativeLayout
+            android:id="@+id/rl_help_press"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_scan_background"
+            android:layout_weight="1">
+
+            <!--帮助-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+
+                <ToggleButton
+                    android:id="@+id/rl_help_btn"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/icon_help"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dip"
+                    android:textColor="@color/sbc_header_text"
+                    android:textSize="12sp"
+                    android:text="@string/hlpe"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</merge>

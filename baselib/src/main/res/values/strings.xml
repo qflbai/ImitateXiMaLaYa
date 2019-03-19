@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">量子微查</string>
+    <string name="title_activity_scan_code">ScanCodeActivity</string>
+    <string name="flashlight">手电筒</string>
+    <string name="hlpe">帮助</string>
+    <string name="string_sdk_query">溯源</string>
+    <string name="string_check_code">鉴伪</string>
+    <string name="string_barcode_and_qrcode">二维码/条形码</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="string_explanation_desc"> \n 1. 扫描过程中,请保持手机稳定. \n  2. 光线不足请打开"手电筒"功能,注意不要反光. \n  3. 请等待量子云码码图对焦清晰(下面样图),溯源鉴伪结果.</string>
+    <string name="string_image_simple">图例:</string>
+    <string name="string_clear">清晰</string>
+    <string name="string_blurry">模糊</string>
+    <string name="string_product_info">产品信息</string>
+    <string name="string_qrcode">二维码/条形码</string>
+    <string name="request_permission">请求启用相机权限.</string>
+    <string name="camera_error">不支持Camera2</string>
+</resources>

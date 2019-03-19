@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.zhouwei.mzbanner.MZBannerView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:layout_marginTop="10dp"
+            app:open_mz_mode="true"
+            app:canLoop="true"
+            app:indicatorAlign="center"
+    />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="@dimen/dp_10"
+    >
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:layout_weight="1"
+        >
+            <ImageView android:layout_width="@dimen/dp_40" android:layout_height="wrap_content"
+                       android:src="@mipmap/emo_im_angel"
+                       android:scaleType="fitCenter"
+                       android:adjustViewBounds="true"
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="经典必听"
+                      android:layout_marginTop="@dimen/dp_10"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:layout_weight="1"
+        >
+            <ImageView android:layout_width="@dimen/dp_40" android:layout_height="wrap_content"
+                       android:src="@mipmap/emo_im_cool"
+                       android:scaleType="fitCenter"
+                       android:adjustViewBounds="true"
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="每日必听"
+                      android:layout_marginTop="@dimen/dp_10"
+
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:layout_weight="1"
+        >
+            <ImageView android:layout_width="@dimen/dp_40" android:layout_height="wrap_content"
+                       android:src="@mipmap/emo_im_crying"
+                       android:scaleType="fitCenter"
+                       android:adjustViewBounds="true"
+
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="下班途中"
+                      android:layout_marginTop="@dimen/dp_10"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:layout_weight="1"
+        >
+            <ImageView android:layout_width="@dimen/dp_40" android:layout_height="wrap_content"
+                       android:src="@mipmap/emo_im_embarrassed"
+                       android:scaleType="fitCenter"
+                       android:adjustViewBounds="true"
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="精品"
+                      android:layout_marginTop="@dimen/dp_10"
+            />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:layout_weight="1"
+        >
+            <ImageView android:layout_width="@dimen/dp_40" android:layout_height="wrap_content"
+                       android:src="@mipmap/emo_im_foot_in_mouth"
+                       android:scaleType="fitCenter"
+                       android:adjustViewBounds="true"
+
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="小雅新品"
+                      android:layout_marginTop="@dimen/dp_10"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_60"
+
+    >
+        <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="听头条"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_10"
+        />
+
+        <com.gongwen.marqueen.SimpleMarqueeView
+                android:id="@+id/simpleMarqueeView"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="@dimen/dp_50"
+                android:flipInterval="2500"
+                android:inAnimation="@anim/in_bottom"
+                android:outAnimation="@anim/out_top"
+                app:marqueeAnimDuration="2000"
+                app:smvTextColor="@color/white"
+                app:smvTextEllipsize="end"
+                app:smvTextGravity="center_vertical"
+                app:smvTextSingleLine="true"
+                app:smvTextSize="15sp"
+                android:layout_toRightOf="@id/tv_1"
+                android:layout_toLeftOf="@id/v_1"
+                android:layout_centerVertical="true"
+        />
+
+        <View
+                android:id="@+id/v_1"
+                android:layout_width="@dimen/dp_1" android:layout_height="match_parent"
+                android:background="@color/black"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_toLeftOf="@id/tv_more"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+        />
+        <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="更多"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+        />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

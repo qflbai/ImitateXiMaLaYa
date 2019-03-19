@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.suntech.decode.camera.view.AutoFitTextureView
+        android:id="@+id/texture_camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/include_activity_scan_code_title" />
+    <!--蒙版-->
+    <include layout="@layout/include_activity_scan_code_cover_layer" />
+
+    <include layout="@layout/include_activity_scan_code_operation_layer" />
+
+    <TextView
+        android:id="@+id/tv_code_info_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white" />
+</RelativeLayout>

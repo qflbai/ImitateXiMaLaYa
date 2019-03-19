@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_capture"
+        android:layout_width="218dp"
+        android:layout_height="218dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <!--扫码框-->
+        <ImageView
+            android:id="@+id/iv_capture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/capture"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/iv_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scan_line" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_top_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_capture"
+        android:background="@drawable/scan_mask" />
+
+    <ImageView
+        android:id="@+id/iv_bottom_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_capture"
+        android:background="@drawable/scan_mask" />
+
+    <ImageView
+        android:id="@+id/iv_left_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/iv_bottom_mask"
+        android:layout_below="@+id/iv_top_mask"
+        android:layout_toLeftOf="@+id/rl_capture"
+        android:background="@drawable/scan_mask" />
+
+    <ImageView
+        android:id="@+id/iv_right_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/iv_bottom_mask"
+        android:layout_below="@+id/iv_top_mask"
+        android:layout_toRightOf="@+id/rl_capture"
+        android:background="@drawable/scan_mask" />
+
+</RelativeLayout>
