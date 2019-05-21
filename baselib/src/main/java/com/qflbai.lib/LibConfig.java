@@ -57,5 +57,5 @@ public class LibConfig {
          */
         public final static String HWADQUARTERS_PATH = SUNTECH_PATH + File.separator + APP_FOLDER_NAME;
     }
-
+//
 }
